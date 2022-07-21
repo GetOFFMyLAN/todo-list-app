@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo List Web App
 
-## Getting Started
+## About the project
 
-First, run the development server:
+This is a simple TODO web app built with a `react-js` frontend and a `mongodb` backend. It allows users to keep track of their projects by setting deadlines, attaching notes, and updating their progress.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### You can see a demo [here](https://axelramone.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Feature List
+* Keep track of projects by creating todos: todos are ways of seeing a project's progress and can help maintain the project's focus
+* Add notes to projects: 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Dependencies
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+On top of react and mongodb, this project uses:
+* `redux-toolkit` (can be replaced with `redux` but will require modifying the store)
+* `react-redux` - required for redux usage in react
+* `nextjs` - page router and request manager based on the file directory
+* `next-session` - used with mongoose to store user session data in mongodb
+* `mongoose` - manages connections to mongodb database (can be replaced with `mongodb`)
+* `react-bootstrap` and `bootstrap` - integrates bootstrap framework in react and allows for overriding bootstrap defaults
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The project's dev dependencies include:
+* `eslint` - a linter to keep code clean
+* `jest` - testing framework
 
-## Learn More
+## Issues and Pull requests
 
-To learn more about Next.js, take a look at the following resources:
+If you notice any issues or want to start a discussion, feel free to open an issue and tag it with the appropriate [tag](https://github.com/GetOFFMyLAN/todo-list-app/labels).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you notice a security vulnerability, please report it privately to me by DMing me on [twitter](https://twitter.com/atramone) or email me at **contact@axelramone.com**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Feature Requests
 
-## Deploy on Vercel
+I'll do my best to add more features and maintain this repo. However, if you have an idea for a feature, don't hesitate to open an issue and tag it with the appropriate feature request tag.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
