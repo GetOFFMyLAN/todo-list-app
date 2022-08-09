@@ -1,6 +1,33 @@
+/* font imports:
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,400&family=Quicksand:wght@300;400;700&display=swap');
+
+
+/* global vars */
+:root {
+  --color-richblack: #071013;
+  --color-sizred: #EB5160;
+  --color-greyblue: #597081;
+  --color-rythm: #777DA7;
+  --color-offwhite: #fffffa;
+  --color-lightgrey: #DFE0E2;
+  --color-linen: #ECE3DD;
+  --color-xiketic: #0B0014;
+  --color-brickred: #D44D5C;
+  --color-melon: #E3B5A4;
+  --color-catawva: #773344;
+  
+  --font-nunito: 'Nunito', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+}
+
 html,
 body {
-  background-color: #fffffa !important;
+  background-color: var(--color-linen) !important;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -16,26 +43,60 @@ a {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-nunito);
+}
+
+/* background color classes */
 .bg-richblack {
-  background-color: #071013;
+  background-color: var(--color-richblack);
 }
 
 .bg-sizred {
-  background-color: #EB5160;
+  background-color: var(--color-sizred);
 }
 
 .bg-greyblue {
-  background-color: #597081;
+  background-color: var(--color-greyblue);
 }
 
 .bg-rythm {
-  background-color: #777DA7;
+  background-color: var(--color-rythm);
 }
 
 .bg-offwhite {
-  background-color: #fffffa;
+  background-color: var(--color-offwhite);
 }
 
 .bg-lightgrey {
-  background-color: #DFE0E2;
+  background-color: var(--color-lightgrey);
+}
+
+.bg-xiketic {
+  background-color: var(--color-xiketic);
+}
+
+/* text color classes */
+.text-richblack {
+  color: var(--color-richblack);
+}
+
+.text-sizred {
+  color: var(--color-sizred);
+}
+
+.text-greyblue {
+  color: var(--color-greyblue);
+}
+
+.text-rythm {
+  color: var(--color-rythm);
+}
+
+.text-offwhite {
+  color: var(--color-offwhite);
+}
+
+.text-lightgrey {
+  color: var(--color-lightgrey);
 }

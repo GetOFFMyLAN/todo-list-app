@@ -1,0 +1,14 @@
+.todo,
+.footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-offwhite);
+}
+
+.todo {
+    margin-bottom: 0.75rem;
+}
+
+.footer {
+    border-top: none;
+    font-family: 'Quicksand', sans-serif;
+}

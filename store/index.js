@@ -4,7 +4,7 @@ import { todoReducer } from './slices'
 export function makeStore() {
     return configureStore({
         reducer: { 
-            todoReducer
+            todolist: todoReducer
         },
     })
 }

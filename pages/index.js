@@ -10,9 +10,7 @@ const Dashboard = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Home>
-          
-        </Home>
+        <Home></Home>
       </>
     );
 }
