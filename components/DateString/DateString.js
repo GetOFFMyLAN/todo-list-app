@@ -44,9 +44,12 @@ function getMonthString(num) {
 }
 
 const DateString = ({date}) => {
-    const day = date.getDate()
-    const month = getMonthString(date.getMonth())
-    const year = date.getFullYear()
+    if (!date) return <></>
+
+    const dateObject = new Date(date)
+    const day = dateObject.getDate()
+    const month = getMonthString(dateObject.getMonth())
+    const year = dateObject.getFullYear()
 
     return (
         <>

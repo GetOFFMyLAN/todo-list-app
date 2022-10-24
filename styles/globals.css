@@ -8,18 +8,12 @@
 
 /* global vars */
 :root {
-  --color-richblack: #071013;
-  --color-sizred: #EB5160;
-  --color-greyblue: #597081;
-  --color-rythm: #777DA7;
-  --color-offwhite: #fffffa;
-  --color-lightgrey: #DFE0E2;
-  --color-linen: #ECE3DD;
-  --color-xiketic: #0B0014;
-  --color-brickred: #D44D5C;
-  --color-melon: #E3B5A4;
-  --color-catawva: #773344;
-  
+  --color-spaceblue: #2B2D42;
+  --color-greyblue: #8D99AE;
+  --color-greywhite: #EDF2F4;
+  --color-brightred: #EF233C;
+  --color-amaranthred: #D90429;
+
   --font-nunito: 'Nunito', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   --font-quicksand: 'Quicksand', sans-serif;
@@ -27,7 +21,8 @@
 
 html,
 body {
-  background-color: var(--color-linen) !important;
+  background-color: var(--color-spaceblue) !important;
+  color: var(--color-greywhite) !important;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -48,55 +43,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* background color classes */
-.bg-richblack {
-  background-color: var(--color-richblack);
-}
-
-.bg-sizred {
-  background-color: var(--color-sizred);
+.bg-spaceblue {
+  background-color: var(--color-spaceblue);
 }
 
 .bg-greyblue {
   background-color: var(--color-greyblue);
 }
 
-.bg-rythm {
-  background-color: var(--color-rythm);
+.bg-greywhite: {
+  background-color: var(--color-greywhite);
 }
 
-.bg-offwhite {
-  background-color: var(--color-offwhite);
+.bg-brightred {
+  background-color: var(--color-brightred);
 }
 
-.bg-lightgrey {
-  background-color: var(--color-lightgrey);
+.bg-amranthred {
+  background-color: var(--color-amaranthred);
 }
 
-.bg-xiketic {
-  background-color: var(--color-xiketic);
-}
 
 /* text color classes */
-.text-richblack {
-  color: var(--color-richblack);
-}
-
-.text-sizred {
-  color: var(--color-sizred);
+.text-spaceblue {
+  color: var(--color-spaceblue);
 }
 
 .text-greyblue {
   color: var(--color-greyblue);
 }
 
-.text-rythm {
-  color: var(--color-rythm);
+.text-greywhite: {
+  color: var(--color-greywhite);
 }
 
-.text-offwhite {
-  color: var(--color-offwhite);
+.text-brightred {
+  color: var(--color-brightred);
 }
 
-.text-lightgrey {
-  color: var(--color-lightgrey);
+.text-amranthred {
+  color: var(--color-amaranthred);
 }

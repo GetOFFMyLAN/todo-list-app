@@ -1,5 +1,34 @@
+.wrapper {
+    border-bottom: 2px solid var(--color-greyblue);
+    height: fit-content;
+}
+
+.sidebarNav > a {
+    color: var(--color-greywhite);
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    font-size: 1.1rem;
+}
+
+a.active {
+    color: var(--color-brightred) !important;
+}
+
 @media (min-width: 768px) {
     .wrapper {
+        height: auto;
         max-width: 200px;
+        border-right: 2px solid var(--color-greyblue);
+        border-bottom: 0;
     }
+
+    .sidebarNav > a {
+        border-left: 2px solid transparent;
+    }
+
+    .sidebarNav > a:hover {
+        color: var(--color-greywhite);
+        border-left: 2px solid var(--color-brightred);
+    }
+
 }

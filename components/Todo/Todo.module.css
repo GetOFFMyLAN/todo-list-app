@@ -1,11 +1,12 @@
 .todo,
 .footer {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-offwhite);
+    background-color: var(--color-greywhite);
 }
 
 .todo {
     margin-bottom: 0.75rem;
+    color: #000;
 }
 
 .footer {

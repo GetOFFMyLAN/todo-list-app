@@ -10,18 +10,18 @@ const todoSlice = createSlice({
     initialState,
     reducers: {
         createTodo: (state, action) => {
-            state.todos.push(action.payload);
+            state.todos.unshift(action.payload)
         },
         updateTodo: (state, action) => {
-            let item = state.todos.map((todo) => todo.id).findIndex(action.payload.id)
+            let item = state.todos.map(todo => todo.id).indexOf(action.payload.id)
             state.todos[item] = action.payload
         },
         deleteTodo: (state, action) => {
-            let item = state.todos.map((todo) => todo.id).findIndex(action.payload.id)
+            let item = state.todos.map(todo => todo.id).indexOf(action.payload.id)
             state.todos.splice(item, 1)
         },
         toggleTodo: (state, action) => {
-            let item = state.todos.map((todo) => todo.id).findIndex(action.payload.id)
+            let item = state.todos.map(todo => todo.id).indexOf(action.payload.id)
             state.todos[item].status = !state.todos[item].status
         }
     }
